@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,900&display=swap');
+
+:root {
+    --bg1: #f5f5f5;
+    --bg2: #f0f0f0;
+    --body: #333333;
+    --brand: #E0E0E0;
+    --white: #fff;
+    --dark_gray: #333333;
+}
+
+body {
+    font-family: "Inter", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: black;
+}
+
+.display-3 {
+    font-family: 'Vast Shadow', serif;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 9vw;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.title-space {
+    margin-bottom: 100px;
+}
+
+a {
+    color: var(--body);
+    text-decoration: none;
+    font-weight: none;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+.link-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon {
+    transition: all 0.4s ease;
+}
+
+.link-more:hover {
+    color: black;
+}
+
+.link-more:hover .icon {
+    transform: translateX(8px);
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro h1 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6 {
+    color: var(--body);
+}
+
+.intro p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.cta-btns {
+    margin-top: 60px;
+}
+
+.navbar-logo {
+    width: 55px;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.85rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#hero {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/barbershop.jpeg) center/cover no-repeat;
+    filter: blur(1px) brightness(0.4) grayscale(20%);
+    z-index: -1;
+}
+
+#hero p {
+    text-align: center;
+}
+
+.address {
+    margin-top: 8rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.map-link {
+    color: #ffffff;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}
+
+#services {
+    background: var(--bg1);
+    display: flex;
+    align-items: center;
+}
+
+#services .service .content .link-more {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services .service p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.custom-rounded {
+    border-radius: 0.9rem;
+    border: 1px solid #d3d3d3;
+    background-color: rgb(233, 235, 235);
+}
+
+.card-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    border-top-right-radius: 0.9rem;
+    border-top-left-radius: 0.9rem;
+    filter: brightness(80%);
+}
+
+.card-img1-top {
+    border-top-right-radius: 0.9rem;
+    border-top-left-radius: 0.9rem;
+    filter: brightness(160%);
+    filter: hue-rotate(80);
+}
+
+#reviews {
+    min-height: 100vh;
+    background-color: var(--bg1);
+}
+
+.review {
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+
+.review img {
+    width: 70px;
+    border-radius: 100px;
+}
+
+#portfolio {
+    min-height: 50vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--bg1);
+    align-items: center;
+    justify-content: center;
+}
+
+#information {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--bg2);
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--bg2);
+}
+
+.port {
+    padding: 5%;
+}
+
+.gallery-item {
+    position: relative;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item .overlay h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.gallery-item .overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.gallery-item .overlay .btn {
+    font-size: 16px;
+}
+
+.modal {
+    padding-top: 8rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 736px) {
+    .gallery-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 20;
+    }
+
+    .gallery-item {
+        margin-bottom: 30px;
+    }
+}
